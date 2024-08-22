@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="primary-nav">
+        <a href="#" class="primary-nav__logo"
+          ><img src="./images/logo.svg" alt="sunnyside's logo"
+        /></a>
+        <label onclick="toggleNav()">
+          <img src="./images/icon-hamburger.svg" alt="Expand Navigator" class="primary-nav__toggle" />
+        </label>
+        <ul class="primary-nav__links">
+          <li class="primary-nav__linkitem"><a href="#">About</a></li>
+          <li class="primary-nav__linkitem"><a href="#">Services</a></li>
+          <li class="primary-nav__linkitem"><a href="#">Projects</a></li>
+          <li class="primary-nav__linkitem">
+            <a class="primary-nav__linkitem_strong" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="landing">
+        <div class="img-container">
+          <div class="content-container">
+            <h1>We are creatives</h1>
+          </div>
+          <img
+            src="./images/desktop/image-header.jpg"
+            alt=""
+            class="img-background"
+          />
+        </div>
+      </section>
+      <section class="slogan">
+        <div class="flex-container">
+          <div class="slogan__image img-container">
+            <img
+              src="./images/desktop/image-transform.jpg"
+              alt=""
+              class="img-background"
+            />
+          </div>
+          <div class="slogan__block">
+            <h2 class="slogan__title">Transform your brand</h2>
+            <p class="slogan__text">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="" class="slogan__link">Learn more</a>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="slogan__image img-container">
+            <img
+              src="./images/desktop/image-stand-out.jpg"
+              alt=""
+              class="img-background"
+            />
+          </div>
+          <div class="slogan__block">
+            <h2 class="slogan__title">Stand out to the right audience</h2>
+            <p class="slogan__text">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a href="" class="slogan__link">Learn more </a>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="flex-container">
+          <div class="product__block img-container">
+            <img
+              src="./images/desktop/image-graphic-design.jpg"
+              alt=""
+              class="img-background"
+            />
+            <h2 class="product__title">Graphic design</h2>
+            <p class="product__description">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+          <div class="product__block img-container">
+            <img
+              src="./images/desktop/image-photography.jpg"
+              alt=""
+              class="img-background"
+            />
+            <h2 class="product__title img-container">Photography</h2>
+            <p class="product__description">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial">
+        <h2 class="testimonial__title">Client testimonials</h2>
+        <div class="flex-container">
+          <div class="testimonial__block">
+            <img
+              src="./images/image-emily.jpg"
+              alt="Emily R."
+              class="testimonial__image"
+            />
+            <p class="testimonial__quote">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <span class="testimonial__name">Emily R.</span
+            ><span class="testimonial__job-title">Marketing Director</span>
+          </div>
+          <div class="testimonial__block">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="Thomas S."
+              class="testimonial__image"
+            />
+            <p class="testimonial__quote">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <span class="testimonial__name">Thomas S.</span
+            ><span class="testimonial__job-title">Chief Operating Officer</span>
+          </div>
+          <div class="testimonial__block">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="Jennie F."
+              class="testimonial__image"
+            />
+            <p class="testimonial__quote">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <span class="testimonial__name">Jennie F.</span
+            ><span class="testimonial__job-title">Business Owner</span>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="flex-container">
+          <div class="gallery__block img-container">
+            <img
+              src="./images/desktop/image-gallery-milkbottles.jpg"
+              alt=""
+              class="img-background"
+            />
+          </div>
+          <div class="gallery__block img-container">
+            <img
+              src="./images/desktop/image-gallery-orange.jpg"
+              alt=""
+              class="img-background"
+            />
+          </div>
+          <div class="gallery__block img-container">
+            <img
+              src="./images/desktop/image-gallery-cone.jpg"
+              alt=""
+              class="img-background"
+            />
+          </div>
+          <div class="gallery__block img-container">
+            <img
+              src="./images/desktop/image-gallery-sugarcubes.jpg"
+              alt="  "
+              class="img-background"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h2>sunnyside</h2>
+      <nav class="secondary-nav">
+        <ul class="secondary-nav__links">
+          <li class="secondary-nav__linkitem"><a href="#">About</a></li>
+          <li class="secondary-nav__linkitem"><a href="#">Services</a></li>
+          <li class="secondary-nav__linkitem"><a href="#">Projects</a></li>
+        </ul>
+      </nav>
+      <div class="contacts">
+        <ul>
+          <li class="contacts__linkitem">
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li class="contacts__linkitem">
+            <a href="#"
+              ><img src="./images/icon-instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li class="contacts__linkitem">
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li class="contacts__linkitem">
+            <a href="#"
+              ><img src="./images/icon-pinterest.svg" alt="pinterest"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
