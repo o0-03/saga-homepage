@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --cl-Blue: hsl(246, 80%, 60%);
+  --cl-Orange: hsl(15, 100%, 70%);
+  --cl-Softblue: hsl(195, 74%, 62%);
+  --cl-Lightred: hsl(348, 100%, 68%);
+  --cl-Limegreen: hsl(145, 58%, 55%);
+  --cl-Violet: hsl(264, 64%, 52%);
+  --cl-Softorange: hsl(43, 84%, 65%);
+
+  --cl-Verydarkblue: hsl(226, 43%, 10%);
+  --cl-Darkblue: hsl(235, 46%, 20%);
+  --cl-Desaturatedblue: hsl(235, 45%, 61%);
+  --cl-myblue: hsl(236, 29%, 34%);
+  --cl-PaleBlue: hsl(236, 100%, 87%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100svh;
+  width: 100svw;
+  background-color: var(--cl-Verydarkblue);
+}
+.container {
+  background-color: var(--cl-Verydarkblue);
+  width: 80%;
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  background-color: var(--cl-Darkblue);
+  color: var(--cl-PaleBlue);
+  border-radius: 8% 8% 0 0;
+}
+.top-info {
+  width: 80%;
+  background-color: var(--cl-Blue);
+  padding: 10%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  .small {
+    font-size: 3cqw;
+  }
+  .name {
+    display: flex;
+    flex-direction: row;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .firstName {
+    font-size: 5.5cqw;
+    margin-right: 2cqw;
+  }
+  .lastName {
+    font-size: 5.5cqw;
+  }
+}
+.back-info {
+  padding: 10%;
+  display: flex;
+  justify-content: space-around;
+  .trans {
+    text-decoration: none;
+    color: var(--cl-Desaturatedblue);
+    font-size: 18px;
+  }
+  .trans:hover {
+    color: white;
+    cursor: pointer;
+  }
+  #weekly {
+    color: white;
+  }
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  display: flex;
+  width: 100%;
+  min-height: 10%;
+  border-radius: 20px;
+  margin-top: 10%;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  svg {
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: -1%;
+  }
+  svg:hover {
+    cursor: pointer;
+  }
+}
+.items-info {
+  display: flex;
+  width: 100%;
+  flex: 0 0 70%;
+  margin-top: auto;
+  background-color: var(--cl-Darkblue);
+  border-radius: 15px;
+  color: var(--cl-PaleBlue);
+  flex-direction: column;
+  justify-content: center;
+}
+.items-info:hover {
+  background-color: var(--cl-myblue);
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5% 10% 0 10%;
+  color: white;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10% 5% 10%;
+}
+.data-big {
+  font-size: 3rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.weekly-data {
+  display: flex;
+}
+.daily-data,
+.monthly-data {
+  display: none;
+}
+.work {
+  background-color: var(--cl-Orange);
+}
+.play {
+  background-color: var(--cl-Softblue);
+}
+.study {
+  background-color: var(--cl-Lightred);
+}
+.exercise {
+  background-color: var(--cl-Limegreen);
+}
+.social {
+  background-color: var(--cl-Violet);
+}
+.self-care {
+  background-color: var(--cl-Softorange);
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 80svh;
+    width: 80svw;
+    flex-direction: row;
+  }
+  .info {
+    max-width: 25%;
+    height: 80svh;
+  }
+  .top-info {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    .small {
+      font-size: 1cqw;
+    }
+    .name {
+      display: flex;
+      flex-direction: column;
+    }
+    .firstName {
+      font-size: 3.5cqw;
+      margin-right: 2cqw;
+    }
+    .lastName {
+      font-size: 3.5cqw;
+    }
+  }
+  .back-info {
+    flex-direction: column;
+    p {
+      margin: 8% 0;
+    }
+  }
+  .items {
+    max-width: 75%;
+    height: 80svh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-left: 10px;
+  }
+  .box {
+    max-width: 30%;
+    display: flex;
+    height: 35svh;
+    margin: auto calc(10% / 6) 0 calc(10% / 6);
+  }
+  .space-between {
+    flex-direction: column;
+    align-items: start;
+  }
+}
